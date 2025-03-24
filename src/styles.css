@@ -1,1 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background: linear-gradient(to top, #2a62b4, #eeca39);
+  background-size: cover; /* Hace que el fondo cubra toda la pantalla */
+  background-position: center center; /* Centra el fondo */
+  min-height: 100vh; /* Asegura que el fondo cubra toda la altura de la ventana */
+  margin: 0; /* Elimina márgenes predeterminados */
+}
