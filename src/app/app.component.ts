@@ -27,12 +27,12 @@ export class AppComponent {
       const surnamePaterno = lastNameParts[0]; // primer apellido
       const surnameMaterno = lastNameParts.length > 1 ? lastNameParts[1] : '';
       // Obtener los primeros 4 caracteres de los apellidos
-      const paternoAbreviado = surnamePaterno.slice(0, 4);
-      const maternoAbreviado = surnameMaterno.slice(0, 4);
+      const paternoAbreviado = surnamePaterno.slice(0, 6);
+      const maternoAbreviado = surnameMaterno.slice(0, 6);
       for (let [i, range] of this.ranges.entries()) {
-        const initA = range.initA.slice(0, 4);  // Apellido paterno inicial
-        const endA = range.endA.slice(0, 4);    // Apellido paterno final
-        const endB = range.endB.slice(0, 4);    // Apellido materno final
+        const initA = range.initA.slice(0, 6);  // Apellido paterno inicial
+        const endA = range.endA.slice(0, 6);    // Apellido paterno final
+        const endB = range.endB.slice(0, 6);    // Apellido materno final
         const paternoInRange = (paternoAbreviado >= initA && paternoAbreviado <= endA);
         //esta en rango
         if (paternoInRange) {
